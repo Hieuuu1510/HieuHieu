@@ -1,0 +1,116 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header{
+    align-items: center;
+    padding: 10px 17px 10px 0;
+
+    .logo img{
+        height: 100%;
+    }
+
+    .timkiem{
+        margin: 0;
+        margin-left: 80px;
+
+        button{
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            width: unset;
+            height: unset;
+            padding: 9px 15px;
+        }
+
+        input{
+            &:focus{
+                outline: none;
+            }
+
+            border: 1px solid black;
+            padding: 9px 15px;
+            height: unset;
+        }
+    }
+
+    .acc{
+        display: flex;
+        margin-top: 0;
+        margin-left: auto;
+
+        a{
+            display: block;
+            padding: 0 10px;
+            margin: 0;
+            line-height: 19px;
+
+            &:hover{
+                color: rgb(216, 142, 30);
+            }
+
+            &:first-child{
+                position: relative;
+
+                &::before{
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    width: 1px;
+                    height: 100%;
+                    background-color: black;
+                }
+            }
+        }
+    }
+
+    .traitim{
+        margin: 0 40px;
+        font-size: 1.5rem;
+    }
+
+    .giohang{
+        font-size: 1.5rem;
+        margin: 0;
+        cursor: pointer;
+
+        &:hover{
+            color: rgb(216, 142, 30);
+        }
+    }
+}
+
+.menu{
+    ul{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+
+        li{
+            list-style: none;
+            position: relative;
+
+            &:not(:last-child)::after{
+                content: "";
+                position: absolute;
+                right: 0;
+                width: 1px;
+                height: 70%;
+                background-color: black;
+                margin-top: auto;
+                margin-bottom: auto;
+                bottom: 0;
+                top: 0;
+            }
+
+            a{
+                margin: 10px 20px;
+                line-height: 19px;
+
+                &:hover{
+                    color: rgb(216, 142, 30);
+                }
+            }
+        }
+    }
+}
